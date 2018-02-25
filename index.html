@@ -2,17 +2,30 @@
 <html lang="zh-Hans">
 <head>
 	<title>我的画板</title>
-	<meta charset="utf-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
 
-<canvas id="xxx" width=300 height=300></canvas>
+<!-- <canvas id="xxx" width=300 height=300></canvas>
   <div id=actions class="actions">
     <button id=eraser>橡皮擦</button>
     <button id=brush>画笔</button>
-  </div>
-<script src="./main.js">
-</script>
+  </div> -->
+  
+<canvas id="xxx" width=300 height=300></canvas>
+<div id = "actions" class="actions">
+<!-- <button id = "eraser">橡皮擦</button>
+<button id = "brush">画笔</button> -->
+<svg id="pen" class="icon active">
+    <use xlink:href="#icon-bianjiqianbixieshuru"></use>
+</svg> 
+<svg id="eraser" class="icon">
+    <use xlink:href="#icon-qingkong_xiangpica"></use>
+</svg> 
+</div>
+<script src="./main.js"></script>
+<script src="//at.alicdn.com/t/font_573371_qmibnfkg2f4oyldi.js"></script>
 </body>
 </html>

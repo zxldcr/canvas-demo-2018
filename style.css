@@ -1,4 +1,4 @@
-#xxx{
+/* #xxx{
   background: green;
   display: block;
 }
@@ -24,4 +24,44 @@ html{
 }
 .actions.x > #eraser{
   display: none
+} */
+body{
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid;
+  }
+  #xxx{
+  background: green;
+  display: block;
+  
+  }
+  .actions{
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding:10px;
+  }
+  .actions > #brush{
+  display: none;
+  }
+  .actions.x>#brush{
+  display: inline-block;
+  }
+  .actions.x>#eraser{
+  display: none;
+  }
+  .icon {
+         width: 2em; height: 2em;
+         vertical-align: -0.15em;
+         fill: currentColor;
+         overflow: hidden;
+      }
+.actions svg{
+  transition: all 0.3s;
+  margin: 0 10px;
+}
+.actions svg.active{
+  fill:red;
+  transform:scale(1.2);
+  
 }

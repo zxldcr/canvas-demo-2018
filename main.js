@@ -123,7 +123,18 @@ eraser.onclick = function(){
 // eraserEnabled = false
 // actions.className = "actions"
 // }
-
+red.onclick=function(){
+  context.fillStyle="red"
+  context.strokeStyle="red"
+}
+yellow.onclick=function(){
+  context.fillStyle="yellow"
+  context.strokeStyle="yellow"
+}
+blue.onclick=function(){
+  context.fillStyle="blue"
+  context.strokeStyle="blue"
+}
 /********/
 function setCanvasSize(){
 var pageWidth = document.documentElement.clientWidth
@@ -142,9 +153,9 @@ window.onresize = function(){
 }
 
 function drawLine(x1,y1,x2,y2){
-var colorSelected={red: 'red',green: 'green',black: 'black'}
+
 context.beginPath()
-context.strokeStyle=colorSelected.red 
+// context.strokeStyle=black; 
 context.moveTo(x1,y1)//起点
 context.lineWidth=5
 context.lineTo(x2,y2)//终点
